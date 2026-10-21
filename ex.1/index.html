@@ -9,6 +9,21 @@
 <script src="script.js"></script>
 </head>
 <body>
- 
+
+<!-- The canvas goes in here (see canvas.parent('stage') in script.js),
+     so the "i" button and its info box can sit in its bottom right corner -->
+<div id="stage">
+  <button id="info-btn" aria-label="Istruzioni">i</button>
+
+  <!-- Small info box above the "i" (hidden until the button is clicked) -->
+  <div id="info-box" role="dialog" aria-label="Istruzioni" hidden>
+    <button id="info-close" aria-label="Chiudi">×</button>
+    <p><strong>Click</strong>: afferri un blocco di tessere. Click di nuovo: lo lasci.</p>
+    <p><strong>Doppio click</strong>: la macchina riordina per bordi e colori.</p>
+    <p><strong>Tasto destro</strong>: foto successiva.</p>
+    <p><strong>S</strong> / <strong>Cmd+S</strong>: salva. <strong>R</strong>: rimescola.</p>
+  </div>
+</div>
+
 </body>
 </html>
